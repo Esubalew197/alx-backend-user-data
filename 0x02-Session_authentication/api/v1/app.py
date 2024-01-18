@@ -47,7 +47,7 @@ def forbidden(error) -> str:
 
 
 @app.before_request
-def auth_user():
+def before_request():
     """Authenticates a user before processing a request.
     """
     if auth:
